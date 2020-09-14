@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <app-stud-dashboard></app-stud-dashboard>
+<body>
+    <form>
+        <div class="teams-card-4" style="width:40%;margin-left: 250px; margin-top: 20px">
+            <header class="teams-panel teams-indigo">
+                <h3>Edit</h3>
+            </header>
+            <div class="teams-panel">
+                <label class="teams-col s3" for="firstname">Firstname:</label>
+                <div class="teams-col s9" style="margin-bottom: 10px">
+                    <input id="firstname" type="text" [(ngModel)]="student.firstname" name="firstname" style="padding: 5px; width: 100%">
+                </div>
+                <label class="teams-col s3" for="lastname">Lastname:</label>
+                <div class="teams-col s9" style="margin-bottom: 10px">
+                    <input id="lastname" type="text" [(ngModel)]="student.lastname" name="lastname" style="padding: 5px; width: 100%">
+                </div>
+                <label class="teams-col s3" for="age">Age:</label>
+                <div class="teams-col s9" style="margin-bottom: 10px">
+                    <input id="age" type="text" [(ngModel)]="student.age" name="age" style="padding: 5px; width: 100%">
+                </div>
+                <label class="teams-col s3" for="gender">Gender:</label>
+                <div class="teams-col s9" style="margin-bottom: 5px">
+                    <input id="gender" type="text" [(ngModel)]="student.gender" name="gender" style="padding: 5px; width: 100%">
+                </div>
+            </div>
+            <footer class="teams-panel teams-padding teams-indigo">
+                <button type="button" (click)="updateStudent()" routerLink='/viewstudent'>Save</button>
+            </footer>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+[
+    {
+        "Firstname": "anurag",
+        "Lastname": "nandoju",
+        "Age": 28,
+        "Gender": "male"
+    },
+    {
+        "Firstname": "anirudh",
+        "Lastname": "parvathala",
+        "Age": 28,
+        "Gender": "male"
+    },
+    {
+        "Firstname": "vinod",
+        "Lastname": "kalvakuntla",
+        "Age": 29,
+        "Gender": "male"
+    },
+    {
+        "Firstname": "kelsey",
+        "Lastname": "reinking",
+        "Age": 27,
+        "Gender": "female"
+    },
+    {
+        "Firstname": "emiley",
+        "Lastname": "louise",
+        "Age": 25,
+        "Gender": "female"
+    }
+]

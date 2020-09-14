@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body ng-app="">
+    <header>
+        <h2 class="teams-container teams-white teams-text-light-blue">
+            <img src="/assets/images/chelsa.jpg" alt="chelsa" class="teams-left teams-circle" style="width: 65px">
+            <b>Scholastic Team</b>
+        </h2>
+        <app-main></app-main>
+    </header>
+    <div class="teams-display-container">
+        <app-side-nav></app-side-nav>
+    </div>
+    <div class="teams-display-container" style="margin-left: 250px; overflow: auto; width: 80.5%; height: 488px">
+        <router-outlet></router-outlet>
+    </div>
+</body>
+</html>

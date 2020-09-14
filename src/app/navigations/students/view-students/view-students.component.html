@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <app-stud-dashboard></app-stud-dashboard>
+<body>
+    <table class="teams-table-all teams-card-4" style="width: 55%; margin-left: 200px; margin-top: 20px">
+        <thead>
+            <tr class="teams-indigo">
+                <th>Id</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th class="teams-center">Actions</th>
+            </tr>
+        </thead>
+        <tr *ngFor="let student of students">
+            <td>{{student.id}}</td>
+            <td>{{student.firstname}}</td>
+            <td>{{student.lastname}}</td>
+            <td>{{student.age}}</td>
+            <td>{{student.gender}}</td>
+            <td><button (click)="getStudentById(student.id)" routerLink='/editstudent' [state]="{student: student}">Update</button> | <button (click)="deleteStudent(student.id)">Delete</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>

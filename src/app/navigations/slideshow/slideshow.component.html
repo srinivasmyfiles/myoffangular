@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .teams-badge {
+        height: 15px;
+        width: 15px;
+        margin: 2px;
+        padding: 0;
+        cursor: pointer
+    }
+</style>
+<body>
+    <div class="teams-large teams-display-topright" style="margin-right: 10px; margin-top: 10px">Choose an Event
+        <select ng-model="selectEvent" class="teams-btn teams-card-4 teams-padding-small teams-border">
+            <option *ngFor="let event of events">
+                {{event}}
+            </option>
+        </select>
+    </div>
+    <div class="teams-display-container" style="max-width: 100%; margin-right: 8px; margin-top: 70px">
+        <img [src]="image.src" [alt]="image.name" style="width: 100%">
+        <div class="teams-container teams-center teams-section teams-large teams-text-white teams-display-bottommiddle"
+            style="width: 100%">
+            <span class="teams-badge demo teams-border teams-transparent teams-hover-white" (click)="currentSlide(1)"></span>
+            <span class="teams-badge demo teams-border teams-transparent teams-hover-white" (click)="currentSlide(2)"></span>
+            <span class="teams-badge demo teams-border teams-transparent teams-hover-white" (click)="currentSlide(3)"></span>
+            <span class="teams-badge demo teams-border teams-transparent teams-hover-white" (click)="currentSlide(4)"></span>
+            <span class="teams-badge demo teams-border teams-transparent teams-hover-white" (click)="currentSlide(5)"></span>
+        </div>
+    </div>
+</body>
+</html>

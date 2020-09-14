@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="teams-container" style="width: 50%; margin-left: 250px; margin-top: 75px">
+        <table class="teams-table-all teams-card-4">
+            <thead>
+            <tr class="teams-indigo">
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+            </thead> 
+            <tr *ngFor="let student of students">
+                <td>{{student.Firstname}}</td>
+                <td>{{student.Lastname}}</td>
+                <td>{{student.Age}}</td>
+                <td>{{student.Gender}}</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

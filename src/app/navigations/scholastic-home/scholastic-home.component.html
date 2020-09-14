@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .teams-badge {
+            height: 17px;
+            width: 17px;
+            margin: 5px;
+            padding: 0;
+            transition: 0.6s ease;
+            cursor: pointer
+        }
+    </style>
+<body>
+    <h2 class="teams-container" style="margin-left: 250px">Welcome to Scholastic Home</h2>
+    <div class="teams-display-container" style="margin-right: 8px; margin-top: 30px">
+        <img [src]="image" style="width: 100%">
+        <div class="teams-container teams-center teams-section teams-large teams-text-white teams-display-bottommiddle"
+            style="width: 100%">
+            <span (click)="currentSlide(1)" class="teams-badge demo teams-border teams-transparent teams-hover-white"></span>
+            <span (click)="currentSlide(2)" class="teams-badge demo teams-border teams-transparent teams-hover-white"></span>
+            <span (click)="currentSlide(3)" class="teams-badge demo teams-border teams-transparent teams-hover-white"></span>
+            <span (click)="currentSlide(4)" class="teams-badge demo teams-border teams-transparent teams-hover-white"></span>
+            <span (click)="currentSlide(5)" class="teams-badge demo teams-border teams-transparent teams-hover-white"></span>
+            <span (click)="currentSlide(6)" class="teams-badge demo teams-border teams-transparent teams-hover-white"></span>
+        </div>
+    </div>
+</body>
+</html>

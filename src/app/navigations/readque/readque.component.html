@@ -1,0 +1,27 @@
+<h2>QUESTION Details</h2> 
+<div *ngIf="quesnair">
+  <div>
+    <label><b>QUESTION ID:</b></label>{{quesnair.id}}
+  </div>
+ <div>
+    <label><b>QUESTION NAME:</b></label>{{quesnair.quename}}
+  </div>
+  <div>
+    <label><b>DISCRIPTION:</b></label> {{quesnair.quediscr}}
+  </div> 
+  <div>
+    <label><b>CREATEBY: </b></label> {{quesnair.createdby}}
+  </div> 
+  <div>
+    <label><b>UPDATEBY: </b></label> {{quesnair.updateby}}
+  </div> 
+  <div>
+    <label><b>DELECTBY: </b></label> {{quesnair.deleteby}}
+  </div>
+  <div>
+    <label><b>ACTIVE: </b></label> {{quesnair.active}}
+  </div>  
+</div>
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Products List</button><br>

@@ -1,0 +1,29 @@
+
+<div class="container col-lg-6">
+    <h1 class="text-center">Login</h1>
+    <div class="card">
+      <div class="card-body">
+        <form #loginfrom="ngForm" (ngSubmit)="handleLogin()">
+       
+         <small class="text-danger">{{msg}}</small>
+          <div class="form-group">
+            <label for="username">Username :</label>
+            <input type="username" class="form-control" id="username" [(ngModel)]="register.username" placeholder="Enter Username"
+              name="username">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" [(ngModel)]="register.password" placeholder="Enter password"
+              name="password">
+          </div>
+
+          <button type="submit" class="btn btn-success">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div  class="text-center">
+    <a routerLink='/register' class="teams-bar-item teams-light-blue teams-button teams-hover-indigo teams-large teams-text-black teams-hover-text-white teams-padding-large">New to Scholastic Team? Click Here for Registration</a>
+  </div>
+ 

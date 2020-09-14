@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <app-stud-dashboard></app-stud-dashboard>    
+<body>
+    <form [formGroup]="studentForm" (ngSubmit)="addStudent()">
+        <div class="teams-card-4" style="width:40%;margin-left: 250px; margin-top: 20px">
+            <header class="teams-panel teams-indigo">
+                <h3>Add Student</h3>
+            </header>
+
+            <div class="teams-panel">
+                <div class="form-group">
+                    <label class="teams-col s3" for="firstname">Firstname:</label>
+                    <div class="teams-col s9" style="margin-bottom: 10px">
+                        <input id="firstname" type="text" formControlName="firstname" class="form-control">
+                        <span class="teams-text-red" *ngIf="(studentForm.get('firstname').touched||studentForm.get('firstname').dirty)&&(studentForm.get('firstname').errors?.required)">
+                            Firstname is required!
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label class="teams-col s3" for="lastname">Lastname:</label>
+                    <div class="teams-col s9" style="margin-bottom: 10px">
+                        <input id="lastname" type="text" formControlName="lastname" class="form-control">
+                        <span class="teams-text-red" *ngIf="(studentForm.get('lastname').touched||studentForm.get('lastname').dirty)&&(studentForm.get('lastname').errors?.required)">
+                            Lastname is required!
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="teams-col s3" for="age">Age:</label>
+                    <div class="teams-col s9" style="margin-bottom: 10px">
+                        <input id="age" type="text" formControlName="age" class="form-control">
+                        <span class="teams-text-red" *ngIf="(studentForm.get('age').touched||studentForm.get('age').dirty)&&(studentForm.get('age').errors?.required)">
+                            Age is required!
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="teams-col s3" for="gender">Gender:</label>
+                    <div class="teams-col s9" style="margin-bottom: 5px">
+                        <input id="gender" type="text" formControlName="gender" class="form-control">
+                        <span class="teams-text-red" *ngIf="(studentForm.get('gender').touched||studentForm.get('gender').dirty)&&(studentForm.get('gender').errors?.required)">
+                            Gender is required!
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="teams-panel teams-padding teams-indigo">
+                <button [disabled]="!(studentForm.valid)" type="submit">Save</button>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

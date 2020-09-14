@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="teams-container" >
+
+        <BR>
+            <br>
+            <br>
+        <h2>Welcome to faculty operations</h2>
+        <div class="form-group">
+        <table class="table table-hover">
+         <thead>
+          <tr>
+              <td>Id</td>
+              <td>QUESTION</td>
+              <td>DISCRIPTION</td>
+              <td>CREATEBY</td>
+              <td>UPDATEBY</td>
+              <td>DELECTBY</td>
+              <td>ACTIVE</td>
+            
+          </tr>
+         </thead>
+            <tbody>
+              <ng-container>
+               <tr *ngFor = "let  quedata of  quedatas" >
+               <td>{{quedata.id}} </td>
+               <td>{{quedata.quename}} </td>
+               <td>{{quedata.quediscr}} </td>
+               <td>{{quedata.createdby}} </td>
+               <td>{{quedata.updateby}} </td>
+               <td>{{quedata.deleteby}} </td>
+               <td>{{quedata.active}} </td>
+   
+            </tr>
+          </ng-container>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</body>
+</html>
+
